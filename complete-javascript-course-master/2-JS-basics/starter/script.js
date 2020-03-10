@@ -410,7 +410,7 @@ BMI, Don´t forget they might have the same BMI.
 Remember: BMI = mass / Height*2
 
  */
-
+/*
 var paul = {
     fullname: 'Paul Alejandro Gallegos Reyes',
     mass: 100,
@@ -446,3 +446,125 @@ function highestBMI(){
 }
 
 highestBMI();
+
+*/
+
+
+/**
+ * Loops and iterations
+ */
+/*
+ for(var i = 0; i < 10; i++){
+     console.log(i);
+ }
+
+ var jhon = [
+    'jhon',
+   'Smith',
+    1998,
+    ['jhon','Mark','Bob','Emily'],
+    'teacher',
+    false
+
+ ];
+/*
+for(var i = 0; i < jhon.length;i++){
+    console.log(jhon[i])
+}
+
+var i=0; 
+while(i < jhon.length){
+    console.log(jhon[i]);
+    i++;
+    
+}*/
+
+//continue and break statements
+
+var jhon = [
+    'jhon',
+   'Smith',
+    1998,
+    ['jhon','Mark','Bob','Emily'],
+    'teacher',
+    false
+
+ ];
+/*
+ for(var i = 0 ; i<jhon.length;i++){
+
+    if(typeof jhon[i] !== 'string'){
+        continue; //with continue skip the rest of lines into the loop, but entry again.
+    }
+    console.log(jhon[i])
+    
+
+ }
+
+ for(var i = 0 ; i<jhon.length;i++){
+
+    if(typeof jhon[i] !== 'string'){
+        break; //with break finish the loop when entry in the if
+    }
+    console.log(jhon[i])
+    
+
+ }
+*/
+
+ //looping bakcwards
+/*
+ for(var i = jhon.length-1; i > 0 ; i--){
+     console.log(jhon[i]);
+ }*/
+
+
+ /*********************************************************
+  * CODING CHALLENGE 5
+  */
+
+  /*
+    Remember the tip calculator challenge? Let's create 
+    a more advanced version using everything we learned!
+
+    This time, jhon and his family went to 5 differents 
+    restaurants. the billls were $124, $48, $268, $180
+    and $42.
+    Jhon likes to tip 20$ of the bill when the bill is 
+    less than %50, 15% when the bill is between $50 and 
+    $200, and 10% if the bill is more than $200.
+
+    Implement a tip calculator using objects and loops:
+    1. Create an object with an array for the bill values
+    2. Add a method to calculated the tip
+    3. This method should include a loop to iterate over
+    all the paid bills and do the tip calculations.
+    4. As an output, create 1)a new array containing 
+    all tips, and 2) an array containinig final paid
+    amounts (bill + tip). HINT: start with two empty 
+    arrays[] as propierties and then fill them up in the
+    loop.
+    
+    EXTRA AFTER FINISHING: Mark's family also went on a 
+    holiday, going to 4 diferent restaurants. The bills
+    were $77, $375, $110, and $45.
+    Mark likes to tip 20% of the bill when the bill is 
+    less than $110m 10% when the bill is between $100
+    and $300, and 25% if the bill is more than $300 
+    (different than jhon).
+
+    5. Implement the same functionaly as before, this 
+    time usinf Mark's tipping rules.
+    6. Create a function (not a method) to calculate the 
+    average of a given array tips. HINT: loop over
+    the array, and in each iteration store the current 
+    sum in a variable (starting from 0). After you have
+    the sum of the array, divide it by the number of
+    elemnts in it (that's how you calculate the 
+    average)
+    7. Calculate the average tip for each family.
+    8. Log to the console which family paid the highest
+    tips on average. 
+
+  */
+
